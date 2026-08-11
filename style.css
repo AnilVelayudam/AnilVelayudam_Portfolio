@@ -191,3 +191,190 @@
   font-weight: 700;
   line-height: 1;
 }
+
+/* =========================
+   FLOATING TECH LOGOS
+   MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .floating-tech {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+
+    margin: 35px auto 0;
+
+    pointer-events: none;
+  }
+
+  .float-logo {
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(14, 21, 37, 0.85);
+    border: 1px solid rgba(125, 211, 192, 0.22);
+
+    backdrop-filter: blur(8px);
+
+    animation:
+      floatMove var(--duration) ease-in-out infinite alternate,
+      floatDrift var(--drift) ease-in-out infinite alternate;
+  }
+
+  .float-logo img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+  }
+
+  /* Python */
+  .float-logo:nth-child(1) {
+    left: 4%;
+    top: 20px;
+  }
+
+  /* Django */
+  .float-logo:nth-child(2) {
+    left: 20%;
+    top: 75px;
+  }
+
+  /* PostgreSQL */
+  .float-logo:nth-child(3) {
+    left: 38%;
+    top: 15px;
+  }
+
+  /* JavaScript */
+  .float-logo:nth-child(4) {
+    left: 57%;
+    top: 80px;
+  }
+
+  /* GitHub */
+  .float-logo:nth-child(5) {
+    left: 77%;
+    top: 25px;
+  }
+
+  /* Docker */
+  .float-logo:nth-child(6) {
+    left: 12%;
+    top: 175px;
+  }
+
+  /* Redis */
+  .float-logo:nth-child(7) {
+    left: 32%;
+    top: 135px;
+  }
+
+  /* AWS */
+  .float-logo:nth-child(8) {
+    left: 52%;
+    top: 190px;
+  }
+
+  /* Flask */
+  .float-logo:nth-child(9) {
+    left: 72%;
+    top: 145px;
+  }
+
+  /* HTML5 */
+  .float-logo:nth-child(10) {
+    left: 3%;
+    top: 235px;
+  }
+
+  /* CSS3 */
+  .float-logo:nth-child(11) {
+    left: 22%;
+    top: 220px;
+  }
+
+  /* FastAPI */
+  .float-logo:nth-child(12) {
+    left: 42%;
+    top: 250px;
+  }
+
+  /* Power BI */
+  .float-logo:nth-child(13) {
+    left: 62%;
+    top: 225px;
+  }
+
+  /* Microsoft Office */
+  .float-logo:nth-child(14) {
+    left: 82%;
+    top: 215px;
+  }
+
+  /* PowerPoint */
+  .float-logo:nth-child(15) {
+    left: 30%;
+    top: 45px;
+  }
+
+  /* Excel */
+  .float-logo:nth-child(16) {
+    left: 67%;
+    top: 55px;
+  }
+}
+
+
+/* Smaller phones */
+@media (max-width: 600px) {
+
+  .floating-tech {
+    height: 270px;
+    margin-top: 30px;
+  }
+
+  .float-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .float-logo img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .float-logo:nth-child(1)  { left: 2%;  top: 15px; }
+  .float-logo:nth-child(2)  { left: 20%; top: 65px; }
+  .float-logo:nth-child(3)  { left: 40%; top: 10px; }
+  .float-logo:nth-child(4)  { left: 60%; top: 70px; }
+  .float-logo:nth-child(5)  { left: 80%; top: 15px; }
+
+  .float-logo:nth-child(6)  { left: 8%;  top: 135px; }
+  .float-logo:nth-child(7)  { left: 28%; top: 115px; }
+  .float-logo:nth-child(8)  { left: 48%; top: 155px; }
+  .float-logo:nth-child(9)  { left: 68%; top: 120px; }
+  .float-logo:nth-child(10) { left: 87%; top: 145px; }
+
+  .float-logo:nth-child(11) { left: 5%;  top: 210px; }
+  .float-logo:nth-child(12) { left: 25%; top: 190px; }
+  .float-logo:nth-child(13) { left: 45%; top: 220px; }
+  .float-logo:nth-child(14) { left: 65%; top: 195px; }
+  .float-logo:nth-child(15) { left: 85%; top: 215px; }
+
+  .float-logo:nth-child(16) { left: 38%; top: 80px; }
+}
