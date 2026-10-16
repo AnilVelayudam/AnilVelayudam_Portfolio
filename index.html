@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anil Velayudam — Full Stack Developer</title>
+<title>Anil Velayudam — Python & Full Stack Developer& GenAI</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -520,7 +520,7 @@
 <nav class="nav" id="siteNav">
   <a href="#" class="logo" style="text-decoration:none;">
     <span class="logo-mark">AV</span>
-    <span class="logo-text">Anil Velayudam<br><span class="dim" style="font-size:10px;">django / web dev</span></span>
+    <span class="logo-text">Anil Velayudam<br><span class="dim" style="font-size:10px;">python / full stack dev</span></span>
   </a>
   <div class="nav-links">
     <a href="#about">about</a>
@@ -542,8 +542,8 @@
     </div>
     <div class="eyebrow" id="eyebrow" style="opacity:0;">system: online</div>
     <h1 id="h1">Anil Velayudam</h1>
-    <div class="role" id="role">Full Stack Developer— Django, PostgreSQL, HTML/CSS/JS</div>
-    <p class="desc" id="desc">Computer Science graduate currently building web applications with Django and PostgreSQL, with a backend foundation from freelance work — API development, automation, and data pipelines. Aspiring full-stack developer, comfortable across the frontend, backend, and database layers</p>
+    <div class="role" id="role">Python Developer · Full Stack Web Development · Learning GenAI</div>
+    <p class="desc" id="desc">Python Developer building web applications with Django, PostgreSQL, HTML, CSS, and JavaScript. Experienced in backend development, REST API integration, database connectivity, and automation. Currently learning Generative AI fundamentals, LLM concepts, and prompt engineering.</p>
     <div class="actions" id="actions">
       <a href="mailto:anilvelayudam@gmail.com" class="btn primary">Email me</a>
       <a href="#experience" class="btn">View work log</a>
@@ -653,7 +653,7 @@
   <section id="about">
     <div class="eyebrow">01 — profile</div>
     <h2 class="section-title fade-up">What I do</h2>
-    <p class="about-text fade-up"><strong>Full Stack Developer currently working with Django and PostgreSQL</strong>, Full-Stack Developer working with Django and PostgreSQL, with a strong backend foundation built through freelance projects involving API development, database integration, caching, and automation tools. Experienced in working directly with clients to turn unclear requirements into practical, production-ready solutions. Also trained in machine learning fundamentals, with experience building and deploying an end-to-end ML prediction system.</p>
+    <p class="about-text fade-up"><strong>Python Developer focused on full-stack web development</strong>, with experience building web applications using Django, Flask, HTML, CSS, JavaScript, and PostgreSQL. Freelance projects include REST API integration, database connectivity, caching, and automation tools. I have also completed AI training and am currently learning Generative AI fundamentals, LLM concepts, and prompt engineering.</p>
     <div class="stats fade-up">
       <div class="stat"><div class="num">70%</div><div class="label">faster API response (Redis caching)</div></div>
       <div class="stat"><div class="num">50K+</div><div class="label">records handled, zero post-deploy issues</div></div>
@@ -978,6 +978,24 @@
     </div>
 
 
+    <!-- Generative AI learning -->
+    <div class="skill-category">
+      <div class="skill-category-title">
+        <span>$</span> genai_learning
+      </div>
+      <div class="skill-list">
+        <div class="skill-card">
+          <span>GenAI Fundamentals</span>
+        </div>
+        <div class="skill-card">
+          <span>LLM Concepts</span>
+        </div>
+        <div class="skill-card">
+          <span>Prompt Engineering</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Tools -->
     <div class="skill-category">
       <div class="skill-category-title">
@@ -1036,7 +1054,7 @@
 
   <h2>Let's build something.</h2>
 
-  <p>Open to backend, automation, and Python development work.</p>
+  <p>Open to Python, backend, full-stack web development, automation, and entry-level GenAI opportunities.</p>
 
   <div class="contact-links">
 
@@ -1097,7 +1115,7 @@
 
 <script>
   // Boot sequence typing effect
-  const bootText = "user@anil:~$ whoami\nAnil Velayudam — Full Stack Developer \nuser@anil:~$ status -- current project [ACTIVE] Jksoven — Bakery E-commerce (Django + PostgreSQL)  APIs & Automation";
+  const bootText = "user@anil:~$ whoami\nAnil Velayudam — Python & Full Stack Developer\nuser@anil:~$ status -- [ACTIVE] Django + PostgreSQL | APIs & Automation | Learning GenAI";
   const bootEl = document.getElementById('boot-line');
   let i = 0;
   function typeBoot(){
@@ -1150,6 +1168,11 @@
       ["Grafana", "https://cdn.simpleicons.org/grafana/F46800"],
       ["Power BI", "https://cdn.simpleicons.org/powerbi/F2C811"],
       ["Docker", "https://cdn.simpleicons.org/docker/2496ED"]
+    ],
+    [
+      ["GenAI Fundamentals", ""],
+      ["LLM Concepts", ""],
+      ["Prompt Engineering", ""]
     ]
   ];
 
@@ -1167,8 +1190,7 @@
       item.style.animationDelay = `${index * 70}ms`;
 
       item.innerHTML = `
-        <img src="${logo}" alt="${name}" loading="lazy"
-             onerror="this.style.display='none';">
+        ${logo ? `<img src="${logo}" alt="${name}" loading="lazy" onerror="this.style.display='none';">` : ""}
         <span>${name}</span>
       `;
 
